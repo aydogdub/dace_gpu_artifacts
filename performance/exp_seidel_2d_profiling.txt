@@ -1,0 +1,165 @@
+
+NOTICE: Existing SQLite export found: seidel2d_exp.sqlite
+        It is assumed file was previously exported from: seidel2d_exp.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/nvtx_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain NV Tools Extension (NVTX) data.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/osrt_sum.py]... 
+
+ ** OS Runtime Summary (osrt_sum):
+
+ Time (%)  Total Time (ns)  Num Calls      Avg (ns)          Med (ns)         Min (ns)        Max (ns)      StdDev (ns)            Name         
+ --------  ---------------  ---------  ----------------  ----------------  --------------  --------------  -------------  ----------------------
+     38.7  252,392,066,304      2,535      99,562,945.3     100,114,720.0           1,568     792,579,488   16,318,043.8  poll                  
+     34.4  224,336,360,032      1,484     151,170,053.9     152,489,712.0         171,840     852,756,416   22,662,357.4  sem_wait              
+     19.4  126,705,669,440          3  42,235,223,146.7  42,286,242,784.0  42,120,732,096  42,298,694,560   99,347,431.7  sem_clockwait         
+      2.5   16,433,402,752      6,380       2,575,768.5          10,320.0           1,024     752,781,568   22,522,414.1  read                  
+      2.4   15,829,367,008         84     188,444,845.3      45,046,144.0      21,485,344   2,453,506,240  410,600,414.4  wait                  
+      1.2    7,736,647,584         34     227,548,458.4           4,016.0           1,088   2,591,135,360  540,289,163.4  select                
+      0.5    3,014,300,000         48      62,797,916.7         449,024.0          13,024     941,158,368  177,850,622.4  waitpid               
+      0.3    1,667,596,160      2,837         587,802.7         556,192.0           1,920      19,876,704      635,810.1  open64                
+      0.3    1,647,874,400      1,712         962,543.5          16,608.0           1,056     617,031,648   15,505,190.1  ioctl                 
+      0.1      430,026,944          6      71,671,157.3      76,065,120.0      26,387,360     110,827,200   36,698,941.4  system                
+      0.1      403,169,024      1,898         212,417.8           1,824.0           1,024      82,127,296    2,499,095.9  fgets                 
+      0.0      307,131,104        899         341,636.4           4,256.0           1,024      23,499,776    2,163,364.9  fread                 
+      0.0      158,679,040         16       9,917,440.0       1,234,848.0         255,968      60,351,040   20,263,495.0  fdatasync             
+      0.0      119,695,840      4,945          24,205.4          18,560.0           6,304          76,192       12,777.2  pthread_rwlock_rdlock 
+      0.0       86,255,168        689         125,188.9          14,112.0           1,600       1,512,640      183,240.5  fopen                 
+      0.0       79,253,792      1,429          55,461.0           1,632.0           1,024       9,005,728      261,314.2  fclose                
+      0.0       74,797,920        830          90,118.0           6,304.0           1,312       2,964,448      190,032.9  fopen64               
+      0.0       74,394,528      3,982          18,682.7          13,856.0           1,120          63,424       10,100.7  pthread_rwlock_wrlock 
+      0.0       61,834,560      5,033          12,285.8           2,912.0           1,024       1,052,992       49,887.4  open                  
+      0.0       25,954,816        175         148,313.2          33,632.0           1,024       5,882,080      615,655.1  write                 
+      0.0       20,235,520          4       5,058,880.0       5,058,272.0       5,056,704       5,062,272        2,386.1  nanosleep             
+      0.0       13,630,528      5,154           2,644.7           2,016.0           1,440          31,520        2,417.7  mmap64                
+      0.0       13,198,816      5,016           2,631.3           2,112.0           1,056         298,240        5,609.3  munmap                
+      0.0       12,599,648         16         787,478.0           4,192.0           2,112      11,807,040    2,943,410.6  pread64               
+      0.0        8,726,144         16         545,384.0         549,056.0         457,984         609,344       44,689.6  fork                  
+      0.0        6,700,864         53         126,431.4         123,616.0           1,408         201,952       23,500.8  fcntl64               
+      0.0        4,020,288         32         125,634.0           2,736.0           1,056       1,127,456      289,578.3  pwrite64              
+      0.0        2,812,736          9         312,526.2          91,392.0          10,464       1,283,552      438,198.2  pthread_cond_timedwait
+      0.0        2,686,432          3         895,477.3          10,880.0           5,984       2,669,568    1,536,409.5  backtrace             
+      0.0        2,427,168          5         485,433.6         378,016.0         317,728         702,048      189,620.8  pthread_create        
+      0.0        2,196,224         44          49,914.2           2,160.0           1,024         238,176       83,756.0  writev                
+      0.0        1,005,568        138           7,286.7           3,056.0           1,920          33,568        6,488.1  mmap                  
+      0.0          826,816        183           4,518.1           1,376.0           1,024          43,744        7,775.8  fwrite                
+      0.0          549,184          4         137,296.0         136,336.0          89,536         186,976       53,446.7  fputs_unlocked        
+      0.0          281,216         10          28,121.6          20,832.0          13,056         108,032       28,389.4  sem_timedwait         
+      0.0          259,904         55           4,725.5           2,976.0           1,664          15,008        3,167.0  pipe2                 
+      0.0          221,568         60           3,692.8           2,800.0           1,376          13,088        2,425.4  pipe                  
+      0.0          159,936         43           3,719.4           1,632.0           1,120          41,088        8,253.3  pthread_mutex_lock    
+      0.0          130,240         42           3,101.0           1,664.0           1,056          10,688        2,743.1  fputs                 
+      0.0           85,312         68           1,254.6           1,184.0           1,024           2,816          255.7  fcntl                 
+      0.0           81,440         24           3,393.3           2,848.0           1,088          10,144        2,139.4  fflush                
+      0.0           74,048          5          14,809.6          12,352.0          10,336          23,424        5,617.7  connect               
+      0.0           58,528         19           3,080.4           1,664.0           1,024          21,824        4,799.9  putc                  
+      0.0           51,072         28           1,824.0           1,520.0           1,024           6,368        1,038.9  sigaction             
+      0.0           48,448          6           8,074.7           7,424.0           5,536          13,408        2,845.9  socket                
+      0.0           46,272          1          46,272.0          46,272.0          46,272          46,272            0.0  pthread_cond_wait     
+      0.0           26,592         10           2,659.2           1,840.0           1,280           7,136        1,760.4  pthread_cond_signal   
+      0.0           19,552         14           1,396.6           1,376.0           1,024           1,952          304.8  dup2                  
+      0.0           18,176          6           3,029.3           3,360.0           1,024           5,088        1,545.1  getc                  
+      0.0           13,216         11           1,201.5           1,184.0           1,024           1,440          141.9  signal                
+      0.0            4,608          1           4,608.0           4,608.0           4,608           4,608            0.0  bind                  
+      0.0            1,728          1           1,728.0           1,728.0           1,728           1,728            0.0  pthread_cond_broadcast
+      0.0            1,568          1           1,568.0           1,568.0           1,568           1,568            0.0  listen                
+      0.0            1,440          1           1,440.0           1,440.0           1,440           1,440            0.0  getentropy            
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/cuda_api_sum.py]... 
+
+ ** CUDA API Summary (cuda_api_sum):
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)   Med (ns)   Min (ns)   Max (ns)    StdDev (ns)              Name            
+ --------  ---------------  ----------  ---------  ---------  --------  -----------  -----------  ----------------------------
+     50.8  123,026,601,312  18,440,148    6,671.7    6,624.0     1,408      118,176        585.8  cudaStreamSynchronize       
+     30.5   73,826,636,704  36,880,272    2,001.8    1,952.0     1,504      831,040      1,157.3  cudaLaunchKernel            
+     18.3   44,169,909,664  18,347,484    2,407.4    2,336.0     1,920      779,552      1,170.2  cudaMemcpyAsync             
+      0.2      541,440,096      61,792    8,762.3    1,920.0     1,472  189,650,368    763,971.3  cudaMalloc                  
+      0.2      416,678,624      61,789    6,743.6    2,400.0     2,144      640,800     44,108.7  cudaFree                    
+      0.0          751,392           2  375,696.0  375,696.0   176,416      574,976    281,824.5  cuLibraryUnload             
+      0.0          509,280           3  169,760.0   43,104.0    14,368      451,808    244,682.9  cudaStreamCreateWithFlags   
+      0.0          482,528           1  482,528.0  482,528.0   482,528      482,528          0.0  cudaHostAlloc               
+      0.0          160,448          12   13,370.7   13,680.0    11,232       14,848      1,242.6  cudaEventRecord             
+      0.0          113,152          12    9,429.3    9,952.0     4,576       11,968      2,064.1  cudaEventQuery              
+      0.0           95,200         420      226.7      192.0        32        2,016        248.6  cuGetProcAddress_v2         
+      0.0           83,904          12    6,992.0    7,328.0     4,256        7,584        909.0  cudaEventCreateWithFlags    
+      0.0           73,632           3   24,544.0   16,896.0    15,328       41,408     14,625.7  cudaStreamDestroy           
+      0.0           68,928           3   22,976.0   14,464.0     3,360       51,104     24,984.3  cudaDeviceSynchronize       
+      0.0           65,536          12    5,461.3    5,696.0     3,008        7,680      1,321.0  cudaStreamIsCapturing_v10000
+      0.0           25,152          12    2,096.0    2,048.0     1,760        2,784        333.3  cudaEventDestroy            
+      0.0            3,904           1    3,904.0    3,904.0     3,904        3,904          0.0  cuInit                      
+      0.0            2,656           2    1,328.0    1,328.0       864        1,792        656.2  cuModuleGetLoadingMode      
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                   Name                                  
+ --------  ---------------  ----------  --------  --------  --------  --------  -----------  -----------------------------------------------------------------------
+     50.1   24,173,093,245  18,347,472   1,317.5   1,344.0     1,056     2,016        141.7  augassign_16_16_gmap_3_0_10(double *, const double *, long, long, long)
+     49.5   23,884,863,761  18,347,472   1,301.8   1,312.0     1,024     2,016        141.7  augassign_17_16_gmap_3_0_12(double *, long, long, long)                
+      0.2      119,542,083      92,664   1,290.1   1,216.0     1,056     1,888        132.4  _Add__map_2_0_19(const double *, double *, int, long)                  
+      0.2      114,866,784      92,664   1,239.6   1,184.0     1,056     1,856        129.8  augassign_12_12_map_2_0_21(double *, const double *, int, long)        
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)    Count     Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)            Operation           
+ --------  ---------------  ----------  --------  --------  --------  --------  -----------  ------------------------------
+    100.0   19,025,860,321  18,347,472   1,037.0   1,024.0       832     1,760        100.5  [CUDA memcpy Device-to-Device]
+      0.0           58,336          12   4,861.3   4,816.0     4,672     5,696        271.0  [CUDA memcpy Host-to-Device]  
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/cuda_gpu_mem_size_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Size) (cuda_gpu_mem_size_sum):
+
+ Total (MB)    Count     Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)            Operation           
+ ----------  ----------  --------  --------  --------  --------  -----------  ------------------------------
+    146.780  18,347,472     0.000     0.000     0.000     0.000        0.000  [CUDA memcpy Device-to-Device]
+      3.840          12     0.320     0.320     0.320     0.320        0.000  [CUDA memcpy Host-to-Device]  
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/openmp_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain OpenMP event data.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/opengl_khr_range_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain KHR Extension (KHR_DEBUG) data.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/opengl_khr_gpu_range_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain GPU KHR Extension (KHR_DEBUG) data.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/vulkan_marker_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain Vulkan Debug Extension (Vulkan Debug Util) data.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/vulkan_gpu_marker_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain GPU Vulkan Debug Extension (GPU Vulkan Debug markers) data.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/dx11_pix_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain DX11 CPU debug markers.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/dx12_gpu_marker_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain DX12 GPU debug markers.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/dx12_pix_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain DX12 CPU debug markers.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/wddm_queue_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain WDDM context data.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/um_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/um_total_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/um_cpu_page_faults_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/openacc_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain OpenACC event data.
+
+Processing [seidel2d_exp.sqlite] with [/users/ybudanaz/spack/opt/spack/linux-neoverse_v2/cuda-12.9.0-4rzdxsogmaoswsgegy7ii65oam56odaf/nsight-systems-2025.1.3/host-linux-armv8/reports/syscall_sum.py]... 
+SKIPPED: seidel2d_exp.sqlite does not contain syscall data.
+
